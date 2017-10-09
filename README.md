@@ -27,6 +27,8 @@ Registre também os Facades no mesmo arquivo
 ]
 </pre>
 
+# Classe Formulario
+
 <h3>Exemplo de input tipo text</h3>
 <pre> Formulario::text(array(
         'label' => 'texto',
