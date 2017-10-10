@@ -1,6 +1,6 @@
 # laravel-bootstrap
 
-Pacote para craicao de interface usando PHP e bootstrap
+Pacote para criação de interface usando PHP e bootstrap
 
 [![license](https://img.shields.io/github/license/mashape/apistatus.svg)]()
 
