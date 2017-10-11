@@ -33,7 +33,8 @@ Registre também os Facades no mesmo arquivo
 <pre> Formulario::text(array(
         'label' => 'texto',
         'name' => 'texto',
-        'value' => 'Valor do campo'  // opcional
+        'value' => 'Valor do campo'  // opcional,
+        'hidden' => true // opcional (true deixa o campo invisível)
 ))</pre>
 
 <h3>Exemplo de input tipo select</h3>
