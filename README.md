@@ -53,7 +53,8 @@ Registre também os Facades no mesmo arquivo
 <pre> Formulario::textarea(array(
         'label' => 'textarea',
         'name' => 'textarea',
-        'rows' => 7
+        'rows' => 7,
+        'value' => 'valor do campo' // opicional
 ))</pre>
 
  <h3>Exemplo de input tipo file</h3>

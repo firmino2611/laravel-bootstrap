@@ -22,6 +22,7 @@ class Formulario
 
 	public function text(Array $config){
 		$value =  isset($config['value']) ? $config['value'] : '';
+		$type =  isset($config['type']) ? $config['type'] : 'text';
 		$placeholder =  isset($config['placeholder']) ? $config['placeholder'] : '';
 
 		if (isset($config['hidden'])) 
@@ -29,7 +30,7 @@ class Formulario
 		else
 			$hidden = '';
 
-		$input = '<div style="display: '. $hidden .'" class="form-group"><label for="">'. $config['label'] .'</label><input type="text" name="'. $config['name'] .'" id="'. $config['name'] .'" value="'. $value .'" placeholder="'. $placeholder .'" class="form-control"></div>';
+		$input = '<div style="display: '. $hidden .'" class="form-group"><label for="">'. $config['label'] .'</label><input type="'.$type.'" name="'. $config['name'] .'" id="'. $config['name'] .'" value="'. $value .'" placeholder="'. $placeholder .'" class="form-control"></div>';
 
 		return $input;
 	}
