@@ -41,7 +41,8 @@ class Formulario
 		if (isset($config['options'])){ 
 			foreach ($config['options'] as $opt) {
 				if (isset($opt[2])) {
-					$options .= '<option selected value="'. $opt[0] .'">'. $opt[1] .'</option>';
+					if(($opt[2] == true))
+						$options .= '<option selected value="'. $opt[0] .'">'. $opt[1] .'</option>';
 				}else{
 					$options .= '<option value="'. $opt[0] .'">'. $opt[1] .'</option>';
 				}
