@@ -43,6 +43,8 @@ class Formulario
 				if (isset($opt[2])) {
 					if(($opt[2] == true))
 						$options .= '<option selected value="'. $opt[0] .'">'. $opt[1] .'</option>';
+					else
+						$options .= '<option value="'. $opt[0] .'">'. $opt[1] .'</option>';
 				}else{
 					$options .= '<option value="'. $opt[0] .'">'. $opt[1] .'</option>';
 				}
