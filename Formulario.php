@@ -69,6 +69,7 @@ class Formulario
 
 	public function textarea(Array $config)
 	{
+		$value =  isset($config['value']) ? $config['value'] : '';
 		if (isset($config['rows'])) {
 			$rows = $config['rows'];
 		}else{
@@ -76,7 +77,7 @@ class Formulario
 		}
 		$input = '<div class="form-group">';
 		$input .= '<label for="">'. $config['label'] .'</label>';
-		$input .= '<textarea type="text" name="'. $config['name'] .'" rows="'. $rows .'" class="form-control"></textarea>';
+		$input .= '<textarea type="text" name="'. $config['name'] .'" rows="'. $rows .'" class="form-control">'. $value .'</textarea>';
 		$input .= '</div>';
 
 		return $input;
@@ -89,7 +90,6 @@ class Formulario
 		$input .= '<input type="file" name="'. $config['name'] .'" id="file2" class="custom-file-input">';
 		$input .= '<span class="custom-file-control"></span>';
 		$input .= '</label>';
-
 
 		return $input;
 	}
