@@ -30,7 +30,7 @@ class Formulario
 		else
 			$hidden = '';
 
-		$input = '<div style="display: '. $hidden .'" class="form-group"><label for="">'. $config['label'] .'</label><input type="'.$type.'" '. $options['required'] ?? '' .' name="'. $config['name'] .'" id="'. $config['name'] .'" value="'. $value .'" placeholder="'. $placeholder .'" class="form-control"></div>';
+		$input = '<div style="display: '. $hidden .'" class="form-group"><label for="">'. $config['label'] .'</label><ionsinput type="'.$type.'" '. $config['required'] ?? '' .' name="'. $config['name'] .'" id="'. $config['name'] .'" value="'. $value .'" placeholder="'. $placeholder .'" class="form-control"></div>';
 
 		return $input;
 	}
