@@ -24,13 +24,14 @@ class Formulario
 		$value =  isset($config['value']) ? $config['value'] : '';
 		$type =  isset($config['type']) ? $config['type'] : 'text';
 		$placeholder =  isset($config['placeholder']) ? $config['placeholder'] : '';
+		$required =  isset($config['required']) ? $config['required'] : '';
 
 		if (isset($config['hidden'])) 
 			$hidden = $config['hidden'] ? 'none' : 'block' ;
 		else
 			$hidden = '';
 
-		$input = '<div style="display: '. $hidden .'" class="form-group"><label for="">'. $config['label'] .'</label><input type="'.$type.'" '. $options['required'] ?? '' .' name="'. $config['name'] .'" id="'. $config['name'] .'" value="'. $value .'" placeholder="'. $placeholder .'" class="form-control"></div>';
+		$input = '<div style="display: '. $hidden .'" class="form-group"><label for="">'. $config['label'] .'</label><input type="'.$type.'" '. $reuired .' name="'. $config['name'] .'" id="'. $config['name'] .'" value="'. $value .'" placeholder="'. $placeholder .'" class="form-control"></div>';
 
 		return $input;
 	}
