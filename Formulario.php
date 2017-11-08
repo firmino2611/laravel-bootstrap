@@ -4,7 +4,9 @@ namespace Firmino\Bootstrap;
 
 class Formulario
 {
-
+	public function get(){
+		return 'oi';
+	}
 	/* 
 	|---------------------------------------------------------------------------------
 	|	Cria um campo de formulario do tipo especifico
@@ -32,7 +34,7 @@ class Formulario
 			$hidden = '';
 
 
-		$input = '<div style="display: '. $hidden .'" class="form-group"><label for="">'. $config['label'] .'</label><input type="'.$type.'" '. $reuired .' name="'. $config['name'] .'" id="'. $config['name'] .'" value="'. $value .'" placeholder="'. $placeholder .'" class="form-control"></div>';
+		$input = '<div style="display: '. $hidden .'" class="form-group"><label for="">'. $config['label'] .'</label><input type="'.$type.'" '. $required .' name="'. $config['name'] .'" id="'. $config['name'] .'" value="'. $value .'" placeholder="'. $placeholder .'" class="form-control"></div>';
 
 		return $input;
 	}
