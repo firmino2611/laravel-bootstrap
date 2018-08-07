@@ -29,18 +29,18 @@ Registre também os Facades no mesmo arquivo
 
 # Classe Formulario
 
-<h3>Exemplo de input tipo text</h3>
-```php 
+### Exemplo de input tipo text
+```pre
 Formulario::text(array(
         'label' => 'texto',
         'name' => 'texto',
         'value' => 'Valor do campo'  // opcional,
         'hidden' => true // opcional (true deixa o campo invisível)
-))
+));
 ```
 
-<h3>Exemplo de input tipo select</h3>
-```php 
+### Exemplo de input tipo select
+```pre
 Formulario::select(array(
         'label' => 'Selecion a operadora',
         'name' => 'operadora',
@@ -53,8 +53,8 @@ Formulario::select(array(
 ))  
 ```
 
- <h3>Exemplo de input tipo textarea</h3>
-```php 
+### Exemplo de input tipo textarea
+```pre 
 Formulario::textarea(array(
         'label' => 'textarea',
         'name' => 'textarea',
@@ -63,15 +63,15 @@ Formulario::textarea(array(
 ))
 ```
 
- <h3>Exemplo de input tipo file</h3>
-```php
+### Exemplo de input tipo file
+```pre
 Formulario::file(array(
         'name' => 'File'
 ))
 ```
 
- <h3>Exemplo de input tipo checkbox</h3>
-```php
+### Exemplo de input tipo checkbox
+```pre
 Formulario::checkbox(array(
         'label' => 'Confirmar presencao',
         'name' => 'checkbox',
