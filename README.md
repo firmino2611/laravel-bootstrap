@@ -12,33 +12,34 @@ Instalando via composer
 
 Registre o ServiceProvider em <i>config/app.php</i> 
 
-<pre>
+```php
 'providers' => [
       Firmino\Bootstrap\Providers\BootstrapServiceProvider::class,
 ]
-</pre>
+```
 
 Registre também os Facades no mesmo arquivo 
 
-<pre>
+```php
 'aliases' => [
       'Formulario' => Firmino\Bootstrap\Facades\Formulario::class,
       'HTML' => Firmino\Bootstrap\Facades\Html::class,
 ]
-</pre>
+```
 
 # Classe Formulario
 
 <h3>Exemplo de input tipo text</h3>
-<pre> Formulario::text(array(
+```php Formulario::text(array(
         'label' => 'texto',
         'name' => 'texto',
         'value' => 'Valor do campo'  // opcional,
         'hidden' => true // opcional (true deixa o campo invisível)
-))</pre>
+))
+```
 
 <h3>Exemplo de input tipo select</h3>
-<pre> Formulario::select(array(
+```php Formulario::select(array(
         'label' => 'Selecion a operadora',
         'name' => 'operadora',
         'multiple' => true, // opicional. habilita o select multiple
@@ -47,27 +48,31 @@ Registre também os Facades no mesmo arquivo
             ['vivo', 'Vivo', true], // o terceiro parametro marca o item como selecionado
             ['tim', 'Tim']
         )
-))  </pre>
+))  
+```
 
  <h3>Exemplo de input tipo textarea</h3>
-<pre> Formulario::textarea(array(
+```php Formulario::textarea(array(
         'label' => 'textarea',
         'name' => 'textarea',
         'rows' => 7,
         'value' => 'valor do campo' // opicional
-))</pre>
+))
+```
 
  <h3>Exemplo de input tipo file</h3>
-<pre> Formulario::file(array(
+```php Formulario::file(array(
         'name' => 'File'
-))</pre>
+))
+```
 
  <h3>Exemplo de input tipo checkbox</h3>
-<pre> Formulario::checkbox(array(
+```php Formulario::checkbox(array(
         'label' => 'Confirmar presencao',
         'name' => 'checkbox',
         'checked' => false
-))</pre>
+))
+```
 
 
 
